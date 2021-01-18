@@ -22,28 +22,33 @@ header {
 
 .jumbotron {
     font-size: 1rem;
-    background-image: url(/images/redcircuit.jpg);
+    background-image: url(../images/redcircuit.jpg);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 4rem;
     min-height: 15rem;
+    margin-right: 3rem;
+}
+
+.decorativeBox img {
+    min-width: 15rem;
+    min-height: 15rem;
+    max-height: 30rem;
+    max-width: 20rem;
+}
+
+.jumbotronTextbox {
+    /* margin-right: 30rem; */
 }
 
 .portfolioHighlightsContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     background-color: black;
     min-height: 13rem;
-    padding: 5rem;
-}
-
-.portfolioHighlight {
-    /* min-height: 5rem;
-    min-width: 5rem; */
-
+    padding: 5rem 2rem;
 }
 
 .portfolioHighlight img {
@@ -56,3 +61,16 @@ footer {
     justify-content: space-around;
     padding-top: 2rem;
 }
+
+@media screen and (max-width: 700px) {
+
+    .portfolioHighlightsContainer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .portfolioHighlight {
+        margin: 1rem 10rem;
+    }
