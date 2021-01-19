@@ -44,6 +44,7 @@ header {
     min-height: 15rem;
     max-height: 40rem;
     max-width: 30rem;
+    margin-left: 4rem;
 }
 
 h1 {
@@ -63,6 +64,7 @@ h1 {
     min-height: 15rem;
     max-height: 30rem;
     max-width: 20rem;
+    border-radius: 200px;
 }
 
 .portfolioHighlightsContainer {
@@ -78,6 +80,7 @@ h1 {
 .portfolioHighlight img {
     max-height: 25rem;
     max-width: 25rem;
+    /* border-radius: 200px; */
 }
 
 footer {
@@ -104,6 +107,6 @@ footer {
     }
 
     .portfolioHighlight img {
-        max-height: 35rem;
-        max-width: 35rem;
+        max-height: 50rem;
+        max-width: 50rem;
     }
