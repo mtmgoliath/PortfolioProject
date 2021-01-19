@@ -11,9 +11,7 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
     background-color: #000000;
     background-image: url(images/northernLights.jpg);
     background-size: 90rem 30rem;
@@ -22,6 +20,26 @@ header {
     min-height: 10rem;
     align-items: baseline;
     padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.navLinks a {
+    line-height: 2rem;
+    color: #000000;
+    text-decoration: none;
+    padding: 2rem;
 }
 
 .jumbotron {
@@ -47,7 +65,8 @@ header {
     margin-left: 4rem;
 }
 
-h1 {
+
+h2 {
     color: #ffffff;
     background-color: #000000;
 }
