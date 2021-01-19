@@ -14,7 +14,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #143013;
+    background-color: #000000;
     background-image: url(images/fireforest.jpg);
     background-size: 30rem 10rem;
     background-repeat: no-repeat;
@@ -27,19 +27,32 @@ header {
 .jumbotron {
     font-size: 1rem;
     background-image: url(images/redcircuit.jpg);
-    background-size: 30rem 10rem;
+    background-size: 90rem 70rem;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: hotpink;
+    background-color: #0e5b1a;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 4rem;
     min-height: 15rem;
 }
+,.jumbotronTextbox {
+    min-width: 15rem;
+    min-height: 15rem;
+    max-height: 30rem;
+    max-width: 20rem;
+}
+
+h1 {
+    color: #ffffff;
+    background-color: #000000;
+}
 
 .jumbotron p {
     font-size: 1.4rem;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .decorativeBox img {
