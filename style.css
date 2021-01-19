@@ -43,7 +43,7 @@ h1 {
 }
 
 .jumbotron {
-    font-size: 1rem;
+    font-size: 1.5rem;
     /* background-image: url(images/redcircuit.jpg);
     background-size: 90rem 70rem;
     background-repeat: no-repeat;
@@ -73,11 +73,11 @@ h2 {
 }
 
 .jumbotron p {
+    display: inline;
     font-size: 1.4rem;
     color: #000000;
-    /* background-color: #000000; */
     background-color: #1B8C20;
-    line-height: 2rem;
+    line-height: 2.8rem;
 }
 
 .decorativeBox img {
@@ -104,6 +104,7 @@ h2 {
 
 .aboutMe p {
     padding: 1.6rem;
+    line-height: 1.7;
 }
 
 
