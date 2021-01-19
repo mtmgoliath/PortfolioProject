@@ -93,6 +93,8 @@ h2 {
 
 .jumbotronTextbox button {
     margin: 4rem;
+    padding: 1rem;
+    border-radius: 25px;
 }
 
 .aboutMe {
@@ -133,7 +135,6 @@ h2 {
 .portfolioHighlight img {
     max-height: 25rem;
     max-width: 25rem;
-    /* border-radius: 200px; */
 }
 
 .portfolioHighlight h3 {
@@ -149,7 +150,14 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-top: 2rem;
+    min-height: 10rem;
 }
+/* started playing around with links for socials needs work*/
+/* .gitHubLink {
+    min-height: 10rem;
+    background-image: url(images/GitHub-Mark-Light-120px-plus.png);
+    background-repeat: no-repeat;
+} */
 
 @media screen and (max-width: 700px) {
 
