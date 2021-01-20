@@ -143,7 +143,7 @@ h2 {
     justify-content: space-evenly;
     background-color: #000000;
     /* min-height: 13rem; */
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 3.5rem 2rem;
 }
 
 .portfolioHighlight {
@@ -166,11 +166,43 @@ h2 {
 
 footer {
     background-color: #1B8C20;
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.contactSection {
+    background-color: #1B8C20;
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactSection h2 {
+    padding-left: 1.6rem;
+    line-height: 1.7;
+    font-size: 2rem;
+}
+
+.contactSection p {
+    padding: 1.6rem;
+    line-height: 1.7;
+}
+
+.linksToSocialMedia {
     display: flex;
     justify-content: space-around;
-    padding-top: 2rem;
-    min-height: 10rem;
+    align-items: center;
 }
+
+footer {
+    font-size: 1rem;
+    padding: 5rem;
+}
+
 /* started playing around with links for socials needs work*/
 /* .gitHubLink {
     min-height: 10rem;
@@ -189,6 +221,11 @@ footer {
         font-size: 1.75rem;
         margin: 0rem 4.5rem;
     }
+
+    .contactSection {
+        font-size: 1.75rem;
+        margin: 0rem 4.5rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -203,6 +240,11 @@ footer {
     }
 
     .portfolioBlurb {
+        font-size: 1.5rem;
+        margin: 0rem 3rem;
+    }
+
+    .contactSection {
         font-size: 1.5rem;
         margin: 0rem 3rem;
     }
@@ -252,6 +294,10 @@ footer {
         overflow: hidden;
     }
 
+    /* .jumbotronTextbox h2 {
+        overflow: hidden;
+    } */
+
     .aboutMe {
         margin: 0rem;
 
@@ -261,4 +307,18 @@ footer {
         margin: 0rem;
 
     }
+
+    .contactSection {
+        margin: 0rem;
+
+    }
+}
+
+/* @media screen and (max-width: 420) and (min-width:490) {
+
+    .jumbotronButton { 
+        margin-left: 6rem;
+    } */
+
+
 }
