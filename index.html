@@ -2,7 +2,7 @@
 <html lang="en-GB">
 
 <head>
-    <title>Home - Mike Martin</title>
+    <title>Portfolio - Mike Martin</title>
     <link rel="stylesheet" type="text/css" href="Normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -10,27 +10,26 @@
 <body>
 
     <header>
+        <h1>Mike Martin: Full Stack Developer;</h1>
         <div class="navLinks">
-            <a href="#">Portfolio</a>
-            <a href="#">About Me</a>
-            <a href="#">Contact</a>
+            <a href="#blurb">Portfolio</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
         </div>
     </header>
 
-    <section class="jumbotron">
-        <div class="decorativeBox"><img src="images/profileSuit.jpg"></div>
+    <section id="home" class="jumbotron">
+        <div class="decorativeBox"><img src="images/profileSuit.jpg" alt="man in profile with sunglasses and beard."></div>
         <div class="jumbotronTextbox">
-            <h1>some meaningful phrase</h1>
-            <p>A lovely 3-4 line paragraph that will jump us to a certain section. 
-            I might make this be a changing banner.
-            every 10secs sounds good.</p>
+            <h2>some meaningful phrase</h2>
+            <p>A lovely 3-4 line paragraph that will jump us to a certain section. I might make this be a changing banner. every 10secs sounds good.</p>
             <form style="display:inline" action="project4.html" method="GET">
-                <button class="jumbotronButton" type="button">What is this wizardry!</button>
+                <button class="jumbotronButton" type="button" value="Jump_to_section">What is this wizardry!</button>
             </form>
         </div>
     </section>
 
-    <section class="aboutMe">
+    <section id="about" class="aboutMe">
         <h2>
             About Me
         </h2>
@@ -44,53 +43,60 @@
         </p>
 
     </section>
-
+    
     <section class="portfolioHighlightsContainer">
         <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" src="images/purplepink.jpg">
-                <p>relevant title</p>
+                <img class="portfolioImage" alt="" src="images/purplepink.jpg">
+                <h3>relevant title</h3>
             </div>
         </a>
         <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" src="images/fireforest.jpg">
-                <p>relevant title</p>
+                <img class="portfolioImage" alt="" src="images/fireforest.jpg">
+                <h3>relevant title</h3>
             </div>
         </a>
         <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" src="images/sworls.jpg">
-                <p>relevant title</p>
+                <img class="portfolioImage" alt="" src="images/sworls.jpg">
+                <h3>relevant title</h3>
             </div>
         </a>
         <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" src="images/purplepink.jpg">
-                <p>relevant title</p>
+                <img class="portfolioImage" alt="" src="images/purplepink.jpg">
+                <h3>relevant title</h3>
             </div>
         </a>
         <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" src="images/fireforest.jpg">
-                <p>relevant title</p>
+                <img class="portfolioImage" alt="" src="images/fireforest.jpg">
+                <h3>relevant title</h3>
             </div>
         </a>
         <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" src="images/sworls.jpg">
-                <p>relevant title</p>
+                <img class="portfolioImage" alt="" src="images/sworls.jpg">
+                <h3>relevant title</h3>
             </div>
         </a>
     </section>
 
+    <section id="blurb" class="portfolioBlurb">
+        <h2>Portfolio</h2>
+        <p>Here is a selection of my projects from my time at Io-Academy.
+            They showcase my knowledge of php and mongos db, html and css, Javascript, Python and some interesting ways to combine them for great results.
+        </p>
+    </section>
+
     <footer>
-        <!-- this to be flex box, space between -->
-        <div class="copyrightInfo">Copyright Mike Martin 2021</div>
-        <div class="linksToSocialmedia">
-            <a href="#">gitHub</a>
+        <div class="copyrightInfo">&copy: Mike Martin 2021</div>
+        <div id="contact" class="linksToSocialmedia">
+            <!-- <div class="gitHubLink"></div> -->
+            <a href="https://github.com/mtmgoliath">gitHub</a>
             <a href="#">heroku</a>
-            <a href="#">linkdin</a>
+            <a href="https://uk.linkedin.com/in/mike-martin-0ba7671b9">linkdin</a>
         </div>
     </footer>
 
