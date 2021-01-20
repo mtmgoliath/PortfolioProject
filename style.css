@@ -116,6 +116,22 @@ h2 {
     line-height: 1.7;
 }
 
+.portfolioBlurb {
+    background-color: #1B8C20;
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.portfolioBlurb h2 {
+    padding-left: 1.6rem;
+}
+
+.portfolioBlurb p {
+    padding: 1.6rem;
+    line-height: 1.7;
+}
+
 
 .portfolioHighlightsContainer {
     display: flex;
@@ -163,20 +179,4 @@ footer {
 
     header {
         background-size: 50rem 30rem;
-    }
-
-    .portfolioHighlightsContainer {
-        padding: 2rem 1rem;
-        flex-direction: column;
-        justify-content: space-around;
-
-    }
-
-    .portfolioHighlight {
-        margin: 1rem 10rem;
-    }
-
-    .portfolioHighlight img {
-        max-height: 50rem;
-        max-width: 50rem;
     }
