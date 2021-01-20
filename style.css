@@ -19,7 +19,7 @@ header {
     background-position: center;
     min-height: 10rem;
     align-items: baseline;
-    padding: 2rem 1rem;
+    /* padding: 2rem 1rem; */
 }
 
 a {
@@ -95,6 +95,9 @@ h2 {
     margin: 4rem;
     padding: 1rem;
     border-radius: 25px;
+    border: 0.5rem solid #1B8C20;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .aboutMe {
@@ -139,12 +142,12 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #000000;
-    min-height: 13rem;
+    /* min-height: 13rem; */
     padding: 5rem 2rem;
 }
 
 .portfolioHighlight {
-    margin-left: 2rem;
+    margin: 0rem 1rem 0rem 1rem;
     text-align: center;
 }
 
@@ -205,8 +208,15 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
 
+@media screen and (min-width: 631px) {
+    .jumbotron {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    
     .jumbotron {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -215,8 +225,14 @@ footer {
         align-items: center;
     }
 
+}
+
+
+@media screen and (max-width: 550px) {
+
     .jumbotronTextbox button {
         margin: 1rem 1rem 1rem 5rem;
+        font-size: 0.75rem;
     }
 
     .decorativeBox img {
@@ -233,6 +249,7 @@ footer {
         max-height: 50rem;
         max-width: 50rem;
         margin-left: 2rem;
+        overflow: hidden;
     }
 
     .aboutMe {
