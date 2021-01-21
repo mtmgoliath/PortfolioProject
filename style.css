@@ -85,10 +85,6 @@ h2 {
     display: block;
 }
 
-.jumbotronButton a:hover {
-    color:#000000
-}
-
 .aboutMe, .portfolioBlurb, .contactSection {
     background-color: #1B8C20;
     font-size: 2rem;
