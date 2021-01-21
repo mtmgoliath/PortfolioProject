@@ -113,7 +113,7 @@ h2 {
 }
 
 .projects1n2 {
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .portfolioHighlight {
@@ -217,6 +217,7 @@ footer {
     h1 {
         font-size: 2.5rem;
     }
+}
 
 @media screen and (max-width: 550px) {
 
@@ -241,10 +242,6 @@ footer {
     .aboutMe, .portfolioBlurb, .contactSection {
         margin: 0rem;
     }
-
-    /* .portfolioHighlightsContainer {
-        margin: 0rem;
-    } */
 }
 
 @media screen and (max-width: 450) {
@@ -257,5 +254,4 @@ footer {
     .decorativeBox img {
         max-height: 10rem;
     }
-
 }
