@@ -33,13 +33,13 @@ h1 {
 .navLinks {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
 }
 
 .navLinks a {
     line-height: 2rem;
     color: #000000;
     padding: 2rem;
+    font-size: 2rem;
 }
 
 .jumbotron {
@@ -161,12 +161,20 @@ footer {
         font-size: 1.75rem;
         margin: 0rem 4.5rem;
     }
+
+    h1 {
+        font-size: 3.5rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
 
     header {
         background-size: 50rem 30rem;
+    }
+
+    h1 {
+        font-size: 3rem;
     }
 
     .aboutMe, .portfolioBlurb, .contactSection {
@@ -183,6 +191,16 @@ footer {
         font-size: 1rem;
         flex-direction: column;
         align-items: center;
+    }
+
+    .navLinks a {
+        line-height: 1.5rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 
 @media screen and (max-width: 550px) {
@@ -208,4 +226,17 @@ footer {
     .aboutMe, .portfolioBlurb, .contactSection {
         margin: 0rem;
     }
+}
+
+@media screen and (max-width: 450) {
+    .navLinks a {
+        line-height: 1rem;
+        padding: 0rem;
+        font-size: 1rem;
+    }
+
+    .decorativeBox img {
+        max-height: 10rem;
+    }
+
 }
