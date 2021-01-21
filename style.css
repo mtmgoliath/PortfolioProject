@@ -74,13 +74,18 @@ h2 {
     line-height: 2.8rem;
 }
 
-.jumbotronTextbox button {
+.jumbotronButton {
+    font-weight: bold;
     margin: 4rem;
     padding: 1rem;
     border-radius: 25px;
     border: 0.5rem solid #1B8C20;
     color: #ffffff;
     background-color: #000000;
+}
+
+.jumbotronButton a:hover {
+    color:#000000
 }
 
 .aboutMe, .portfolioBlurb, .contactSection {
