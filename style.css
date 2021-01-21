@@ -82,6 +82,7 @@ h2 {
     border: 0.5rem solid #1B8C20;
     color: #ffffff;
     background-color: #000000;
+    display: block;
 }
 
 .jumbotronButton a:hover {
@@ -91,9 +92,7 @@ h2 {
 .aboutMe, .portfolioBlurb, .contactSection {
     background-color: #1B8C20;
     font-size: 2rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-
+    margin: 0rem 6rem;
 }
 
 .aboutMe h2, .portfolioBlurb h2, .contactSection h2 {
@@ -108,18 +107,17 @@ h2 {
 .portfolioHighlightsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 5rem 2rem 3.5rem 2rem;
+    justify-content: space-between;
+    margin: 4rem 6rem 2rem 6rem;
+    overflow: hidden;
+}
+
+.projects1n2 {
+    justify-content: space-evenly
 }
 
 .portfolioHighlight {
-    margin: 0rem 1rem 0rem 1rem;
     text-align: center;
-}
-
-.portfolioHighlight a {
-    width: 100%;
-    height: 100%;
 }
 
 .portfolioHighlight img {
@@ -147,12 +145,19 @@ h2 {
     align-items: center;
 }
 
+.sMLogo {
+    max-width: 6rem;
+    margin-bottom: 3rem;
+    background-color: #1B8C20;
+}
+
 footer {
     color: #1B8C20;
     font-size: 1rem;
     padding: 5rem;
     text-align: center;
 }
+
 
 
 @media screen and (max-width: 1000px) {
@@ -165,6 +170,16 @@ footer {
     h1 {
         font-size: 3.5rem;
     }
+
+    .portfolioHighlightsContainer {
+        margin: 4rem 4.5rem 2rem 4.5rem;
+    }
+}
+
+@media screen and (max-width: 945px) {
+
+    .portfolioHighlightsContainer {
+        justify-content: space-evenly;
 }
 
 @media screen and (max-width: 700px) {
@@ -226,6 +241,10 @@ footer {
     .aboutMe, .portfolioBlurb, .contactSection {
         margin: 0rem;
     }
+
+    /* .portfolioHighlightsContainer {
+        margin: 0rem;
+    } */
 }
 
 @media screen and (max-width: 450) {
