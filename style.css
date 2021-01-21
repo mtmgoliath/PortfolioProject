@@ -11,19 +11,17 @@ body {
 }
 
 header {
-
-    background-color: #000000;
     background-image: url(images/northernLights.jpg);
-    background-size: 90rem 30rem;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    min-height: 10rem;
-    align-items: baseline;
-    /* padding: 2rem 1rem; */
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    background-color: #1B8C20;
 }
 
 h1 {
@@ -35,47 +33,32 @@ h1 {
 .navLinks {
     display: flex;
     justify-content: center;
-    text-align: center;
-    font-size: 2rem;
 }
 
 .navLinks a {
     line-height: 2rem;
     color: #000000;
-    text-decoration: none;
     padding: 2rem;
+    font-size: 2rem;
 }
 
 .jumbotron {
     font-size: 1.5rem;
-    /* background-image: url(images/redcircuit.jpg);
-    background-size: 90rem 70rem;
-    background-repeat: no-repeat;
-    background-position: center; */
-    /* I have removed picture temporarily as it clashes */
-    /* background-color: #0e5b1a; */
-    background-color: #000000;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 4rem;
-    min-height: 15rem;
 }
 
 .decorativeBox img {
-    min-width: 15rem;
-    min-height: 15rem;
-    max-height: 30rem;
-    max-width: 20rem;
+    max-height: 25rem;
     border-radius: 200px;
 }
 
 .jumbotronTextbox {
-    min-width: 15rem;
-    min-height: 15rem;
-    max-height: 40rem;
     max-width: 30rem;
     margin-left: 4rem;
+    text-align: center;
 }
 
 h2 {
@@ -91,7 +74,8 @@ h2 {
     line-height: 2.8rem;
 }
 
-.jumbotronTextbox button {
+.jumbotronButton {
+    font-weight: bold;
     margin: 4rem;
     padding: 1rem;
     border-radius: 25px;
@@ -100,9 +84,11 @@ h2 {
     background-color: #000000;
 }
 
-.aboutMe {
-    /* background-color: #206D27; */
-    /* background-color: #0DBD29; */
+.jumbotronButton a:hover {
+    color:#000000
+}
+
+.aboutMe, .portfolioBlurb, .contactSection {
     background-color: #1B8C20;
     font-size: 2rem;
     margin-left: 6rem;
@@ -110,40 +96,20 @@ h2 {
 
 }
 
-.aboutMe h2 {
+.aboutMe h2, .portfolioBlurb h2, .contactSection h2 {
     padding-left: 1.6rem;
 }
 
-.aboutMe p {
+.aboutMe p, .portfolioBlurb p, .contactSection p {
     padding: 1.6rem;
     line-height: 1.7;
 }
-
-.portfolioBlurb {
-    background-color: #1B8C20;
-    font-size: 2rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-}
-
-.portfolioBlurb h2 {
-    padding-left: 1.6rem;
-}
-
-.portfolioBlurb p {
-    padding: 1.6rem;
-    line-height: 1.7;
-}
-
 
 .portfolioHighlightsContainer {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #000000;
-    /* min-height: 13rem; */
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 3.5rem 2rem;
 }
 
 .portfolioHighlight {
@@ -151,8 +117,12 @@ h2 {
     text-align: center;
 }
 
+.portfolioHighlight a {
+    width: 100%;
+    height: 100%;
+}
+
 .portfolioHighlight img {
-    max-height: 25rem;
     max-width: 25rem;
 }
 
@@ -160,34 +130,40 @@ h2 {
     font-size: 2rem;
     color: #000000;
     background-color: #1B8C20;
-    text-decoration: none;
+}
 
+.contactSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection h2 {
+    font-size: 2rem;
+}
+
+.linksToSocialMedia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer {
-    background-color: #1B8C20;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-    min-height: 10rem;
+    color: #1B8C20;
+    font-size: 1rem;
+    padding: 5rem;
+    text-align: center;
 }
-/* started playing around with links for socials needs work*/
-/* .gitHubLink {
-    min-height: 10rem;
-    background-image: url(images/GitHub-Mark-Light-120px-plus.png);
-    background-repeat: no-repeat;
-} */
+
 
 @media screen and (max-width: 1000px) {
-    
-    .aboutMe {
+
+    .aboutMe, .portfolioBlurb, .contactSection {
         font-size: 1.75rem;
         margin: 0rem 4.5rem;
     }
 
-    .portfolioBlurb {
-        font-size: 1.75rem;
-        margin: 0rem 4.5rem;
+    h1 {
+        font-size: 3.5rem;
     }
 }
 
@@ -197,21 +173,13 @@ footer {
         background-size: 50rem 30rem;
     }
 
-    .aboutMe {
-        font-size: 1.5rem;
-        margin: 0rem 3rem;
+    h1 {
+        font-size: 3rem;
     }
 
-    .portfolioBlurb {
+    .aboutMe, .portfolioBlurb, .contactSection {
         font-size: 1.5rem;
         margin: 0rem 3rem;
-    }
-}
-
-
-@media screen and (min-width: 631px) {
-    .jumbotron {
-        overflow: hidden;
     }
 }
 
@@ -225,8 +193,15 @@ footer {
         align-items: center;
     }
 
-}
+    .navLinks a {
+        line-height: 1.5rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
 
+    h1 {
+        font-size: 2.5rem;
+    }
 
 @media screen and (max-width: 550px) {
 
@@ -236,29 +211,32 @@ footer {
     }
 
     .decorativeBox img {
-        min-width: 5rem;
-        min-height: 5rem;
-        max-height: 15rem;
-        max-width: 15rem;
-        border-radius: 200px;
+        max-height: 20rem;
     }
     
     .jumbotronTextbox {
-        min-width: 5rem;
-        min-height: 5rem;
-        max-height: 50rem;
         max-width: 50rem;
         margin-left: 2rem;
-        overflow: hidden;
     }
 
-    .aboutMe {
+    .portfolioHighlight img {
+        max-height: 20rem;
+    }
+
+    .aboutMe, .portfolioBlurb, .contactSection {
         margin: 0rem;
+    }
+}
 
+@media screen and (max-width: 450) {
+    .navLinks a {
+        line-height: 1rem;
+        padding: 0rem;
+        font-size: 1rem;
     }
 
-    .portfolioBlurb {
-        margin: 0rem;
-
+    .decorativeBox img {
+        max-height: 10rem;
     }
+
 }

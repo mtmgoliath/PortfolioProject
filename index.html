@@ -3,8 +3,9 @@
 
 <head>
     <title>Portfolio - Mike Martin</title>
-    <link rel="stylesheet" type="text/css" href="Normalize.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <header>
         <h1>Mike Martin: Full Stack Developer;</h1>
         <div class="navLinks">
-            <a href="#blurb">Portfolio</a>
+            <a href="#portfolioIntroduction">Portfolio</a>
             <a href="#about">About Me</a>
             <a href="#contact">Contact</a>
         </div>
@@ -23,21 +24,17 @@
         <div class="jumbotronTextbox">
             <h2>some meaningful phrase</h2>
             <p>A lovely 3-4 line paragraph that will jump us to a certain section. I might make this be a changing banner. every 10secs sounds good.</p>
-            <form style="display:inline" action="project4.html" method="GET">
-                <button class="jumbotronButton" type="button" value="Jump_to_section">What is this wizardry!</button>
-            </form>
+            <a href="#portfolioIntroduction" class="jumbotronButton" type="button" value="jumpToSection">What is this wizardry!</a>
         </div>
     </section>
 
     <section id="about" class="aboutMe">
-        <h2>
-            About Me
-        </h2>
+        <h2>About Me</h2>
         <p>
-            I am currently training to be a full stack web developer at Io-Academy.
+            I am currently training to be a full stack web developer at iO Academy.
             I come from 15 years experience within the construction industry, with 5 years specialization in controlled demolition.
             I reached the peak of learning possible to me in the physical world of construction.
-            I can build you anything you need physically and now with the skills I have learnt here at Io, I can build you just about anything virtually!
+            I can build you anything you need physically and now with the skills I have learnt here at iO, I can build you just about anything virtually!
             From good looking websites to streamlined database apps, the possibilities are endless.
             Set the task and watch the magic happen.
         </p>
@@ -45,59 +42,63 @@
     </section>
     
     <section class="portfolioHighlightsContainer">
-        <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" alt="" src="images/purplepink.jpg">
-                <h3>relevant title</h3>
+                <a href="#"></a>
+                <img class="portfolioImage" alt="" src="images/purplePink.jpg">
+                <h3>Project 1</h3>
             </div>
-        </a>
-        <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" alt="" src="images/fireforest.jpg">
-                <h3>relevant title</h3>
+                <a href="#"></a>
+                <img class="portfolioImage" alt="" src="images/fireForest.jpg">
+                <h3>Project2</h3>
             </div>
-        </a>
-        <a href="#">
+    </section>
+    
+    <section id="portfolioIntroduction" class="portfolioBlurb">
+        <h2>Portfolio</h2>
+        <p>Here is a selection of my projects from my time at iO Academy.
+            They showcase my knowledge of PHP and mongoDB, html and CSS, Javascript, Python and some interesting ways to combine them for great results.
+        </p>
+    </section>
+    
+    <section class="portfolioHighlightsContainer">
             <div class="portfolioHighlight">
+                <a href="#"></a>
                 <img class="portfolioImage" alt="" src="images/sworls.jpg">
-                <h3>relevant title</h3>
+                <h3>Project 3</h3>
             </div>
-        </a>
-        <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" alt="" src="images/purplepink.jpg">
-                <h3>relevant title</h3>
+                <a href="#"></a>
+                <img class="portfolioImage" alt="" src="images/purplePink.jpg">
+                <h3>Project 4</h3>
             </div>
-        </a>
-        <a href="#">
             <div class="portfolioHighlight">
-                <img class="portfolioImage" alt="" src="images/fireforest.jpg">
-                <h3>relevant title</h3>
+                <a href="#"></a>
+                <img class="portfolioImage" alt="" src="images/fireForest.jpg">
+                <h3>Project 5</h3>
             </div>
-        </a>
-        <a href="#">
             <div class="portfolioHighlight">
+                <a href="#"></a>
                 <img class="portfolioImage" alt="" src="images/sworls.jpg">
-                <h3>relevant title</h3>
+                <h3>Project 6</h3>
             </div>
-        </a>
     </section>
 
-    <section id="blurb" class="portfolioBlurb">
-        <h2>Portfolio</h2>
-        <p>Here is a selection of my projects from my time at Io-Academy.
-            They showcase my knowledge of php and mongos db, html and css, Javascript, Python and some interesting ways to combine them for great results.
+    <section class="contactSection">
+        <h2>Contact</h2>
+        <p>
+            Here are some links to my Github, Linkedin and also my email.
+            Please do get in touch if you have any queries.
         </p>
+        <div id="contact" class="linksToSocialMedia">
+            <a href="https://github.com/mtmgoliath">gitHub</a>
+            <a href="#">email</a>
+            <a href="https://uk.linkedin.com/in/mike-martin-0ba7671b9">linkedin</a>
+        </div>
     </section>
 
     <footer>
-        <div class="copyrightInfo">&copy: Mike Martin 2021</div>
-        <div id="contact" class="linksToSocialmedia">
-            <!-- <div class="gitHubLink"></div> -->
-            <a href="https://github.com/mtmgoliath">gitHub</a>
-            <a href="#">heroku</a>
-            <a href="https://uk.linkedin.com/in/mike-martin-0ba7671b9">linkdin</a>
-        </div>
+        <div class="copyrightInfo">&copy Mike Martin 2021</div>
     </footer>
 
 </body>
