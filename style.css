@@ -103,13 +103,9 @@ h2 {
 .portfolioHighlightsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 4rem 6rem 2rem 6rem;
-    overflow: hidden;
-}
-
-.projects1n2 {
     justify-content: space-evenly;
+    margin: 4rem 6rem 2rem 6rem;
+
 }
 
 .portfolioHighlight {
